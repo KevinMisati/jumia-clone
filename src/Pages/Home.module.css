@@ -1,0 +1,37 @@
+main{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    max-width: 1148px;
+    align-items: center;
+}
+.home-link{
+    font-size: .75rem;
+    text-decoration: none;
+    margin: 8px 8px;
+   font-weight: 300;
+}
+.home-link a{
+ text-decoration: none;
+
+font-size: 12px;
+cursor: pointer;
+}
+.home-link-one{
+    margin-right: 8px;
+    color: rgb(0,0,0);
+}
+.home-link-two{
+    color: #75757a;
+    
+}
+.home-link-one::after{
+    content:">";
+    margin-left: 8px;
+
+}
+.sidebar-anniversary{
+    display: flex;
+}

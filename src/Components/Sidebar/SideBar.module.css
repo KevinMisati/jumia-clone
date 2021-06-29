@@ -1,0 +1,120 @@
+/* general */
+.sidebar{
+    max-width: 25%;
+    min-width: 25%;
+    width: 25%;
+    color: #282828;
+    background-color: #ffffff;
+}
+.sidebar h2{
+    font-size: .875rem;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    font-weight: 500;  
+}
+.sidebar .search{
+    display: block;
+    margin: 0 8px;
+   border: 1px solid #c7c7cd;
+   overflow: hidden;
+   border-radius: 99px;
+   height: 32px;
+   padding: 0 8px;
+   margin: 0 4px;
+   display: flex;
+   align-items: center;
+}
+.search input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.search button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+}
+/* input:focus,input:active{
+    border: 1px solid #c7c7cd;
+   
+} */
+/* ====categories sectioin==== */
+.categories article {
+    display: flex;
+    flex-direction: column; 
+    padding: 8px; 
+}
+.categories a {
+    text-decoration: none;
+    color: #282828;
+    padding: 8px 32px;
+    display: block;
+    font-size: .875rem;
+    font-weight: 100;
+}
+.categories a:hover{
+    background-color: rgba(0,0,0,0.1);
+    
+}
+/* end of categories section */
+
+
+/* Brand section */
+.brand{
+    border-top: 1px solid #ededed;
+    margin: 0;
+    padding: 8px;
+}
+.control {
+    padding: 8px 8px;
+}
+.control label{
+    margin: 0 0 0 8px;
+}
+
+/* end of brand section */
+
+/* ==price section=== */
+.price{
+    padding: 8px;
+    border-top: 1px solid #ededed;
+}
+.price .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: .875rem;
+}
+.title button {
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    line-height: 1rem;
+    text-align: center;
+    font-weight: 500;
+    color: #f68b1e;
+    padding: 2px 4px;
+}
+.title button:hover {
+    background: rgba(250,0,0,.2);
+    border-radius: 4px;
+
+}
+.price-range{
+    margin: 16px 0;
+    width: 100%;
+    height: 25px;
+}
+.left-range{
+    background-color: #f68b1e;
+    height: 5px;
+    z-index: 10;
+}
+/* ==end of price section=== */

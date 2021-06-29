@@ -1,0 +1,31 @@
+.anniversary-container{
+    /* flex-grow: 1; */
+    padding: 8px;
+    margin-left: 16px;
+    background: #fff;
+    border-radius:4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    font-size: .875rem;
+    flex-basis: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    width: 75%;
+}
+.anniversary{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 4px;
+    margin: 0 auto;
+}
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.title h2:nth-child(1) {
+text-transform: capitalize;
+}
+.title h4{
+    cursor: pointer;
+}

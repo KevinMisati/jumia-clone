@@ -1,0 +1,78 @@
+
+.size{
+    padding:8px ;
+    border-top:1px solid #ededed ;
+}
+.size h2{
+    font-size: .875rem;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    font-weight: 500;  
+}
+.size .search{
+    display: block;
+    margin: 0 8px;
+   border: 1px solid #c7c7cd;
+   overflow: hidden;
+   border-radius: 99px;
+   height: 32px;
+   padding: 0 8px;
+   margin: 0 4px;
+   display: flex;
+   align-items: center;
+}
+.search input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.search button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+}
+.size .search{
+    display: block;
+    margin: 0 8px;
+   border: 1px solid #c7c7cd;
+   overflow: hidden;
+   border-radius: 99px;
+   height: 32px;
+   padding: 0 8px;
+   margin: 0 4px;
+   display: flex;
+   align-items: center;
+}
+.search input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.search button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+}
+.brand{
+    border-top: 1px solid #ededed;
+    margin: 0;
+    padding: 8px;
+}
+.control {
+    padding: 8px 8px;
+}
+.control label{
+    margin: 0 0 0 8px;
+}

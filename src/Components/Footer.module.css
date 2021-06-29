@@ -1,0 +1,119 @@
+.footer{
+    font-size:.75rem;
+    background-color: #323232;
+    color: #c7c7cd;
+    padding-bottom: 16px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Fist part */
+.first-part-container{
+    width: 100%;
+    background-color: #282828;
+     margin-bottom:16px;
+}
+.first-part{
+    width: 100%;
+    max-width: 1148px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    flex: 0 1 auto;
+}
+.first-part .logo{
+    flex-basis: 25%;
+    max-width: 25%;
+    min-width: 25%;
+    width: 25%;
+    cursor: pointer;
+}
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 43.75%;
+    max-width: 43.75%;
+    min-width: 43.75%;
+    width: 43.75%;
+    padding: 0 8px;
+}
+.footer-form h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+.footer-form p{
+    padding-bottom: 8px;
+}
+
+.first-part form{
+    display: flex;
+}
+.footer-form input {
+    border-radius: 4px;
+    border: 1px solid #fff;
+    padding: .5rem .25rem;
+    line-height: 1.2;
+    padding-left: 32px;
+    flex-grow: 1;
+    outline: none;
+    margin-right :4px;
+}
+.footer-form input:active,
+.footer-form input:focus,
+.footer-form input:hover{
+    border: 1px solid #f68b1e;
+    outline: none;
+    
+}
+ .footer-form button {
+    background: transparent;
+    outline: none;
+    border: 1.5px solid #fff;
+    text-transform:uppercase;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    margin:  0 4px;
+    cursor: pointer;
+    color: #fff;
+}
+.footer-form button:hover{
+    color: #f68b1e;
+    border-color: #f68b1e;
+}
+.download {
+    flex-basis: 25%;
+    max-width: 25%;
+    min-width: 25%;
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+}
+.download-icon-text{
+    display: flex;
+}
+.download-icon{
+    margin-right: 16px;
+    cursor: pointer;
+}
+.download-text h3{
+    margin: -3px 0 16px 0 ;
+    
+    color: #fff;
+    text-transform: uppercase;
+}
+.app-google-icons{
+    margin-top: 16px;
+    display: flex;
+}
+.app-google-icons div{
+    border: 1px solid #fff;
+    padding: 8px;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+/* second part */

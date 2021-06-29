@@ -1,0 +1,19 @@
+.banner {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:8px 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.banner:hover {
+    background: rgba(200,200,200,.1);
+}
+.banner:hover img{
+    transform: scale(1.008);
+}
+.banner img{
+    width: auto;
+}
