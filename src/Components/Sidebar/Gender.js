@@ -12,27 +12,27 @@ const Gender = () => {
                         <input placeholder="Search"  type="text" />
                         </div>
                         <div className={classes.control}>
-                        <input id="Adidas" type="checkbox" name="" id="" />
+                        <input id="Adidas" type="checkbox" name=""  />
                             <label htmlFor="">Baby</label>
                         </div>
                         
                             <div className={classes.control}>
-                        <input id="Advance" type="checkbox" name="" id="" />
+                        <input id="Advance" type="checkbox" name="" />
                             <label htmlFor="">Boys</label>
                         </div>
                         
                             <div className={classes.control}>
-                        <input id="Always" type="checkbox" name="" id="" />
+                        <input id="Always" type="checkbox" name=""  />
                             <label htmlFor="">Females</label>
                             </div>
 
                         <div className={classes.control}>
-                        <input id="Ampex" type="checkbox" name="" id="" />
+                        <input id="Ampex" type="checkbox" name=""  />
                             <label htmlFor="">Girls</label>
                         </div>
 
                          <div className={classes.control}>
-                        <input id="Annov" type="checkbox" name="" id="" />
+                        <input id="Annov" type="checkbox" name=""  />
                             <label htmlFor="">Male</label>
                         </div>
             </form>

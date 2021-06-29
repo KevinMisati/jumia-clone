@@ -49,9 +49,9 @@ const TopDeals = () => {
         <div className={classes["all-products"]}>
             <h2>Top Deals</h2>
             <div className={classes["all-products-container"]}>
-            {data.map(datum => {
+            {data.map((datum,index) => {
                 return (
-                    <SingleProduct width = {"133px"} product={datum} />
+                    <SingleProduct key={index +Math.random()} width = {"133px"} product={datum} />
                 )
             })}
             </div>

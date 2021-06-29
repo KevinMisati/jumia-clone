@@ -12,7 +12,7 @@ const Home = () => {
             
             <div className={classes["home-link"]}>
                 <a className={classes["home-link-one"]} href="/">Home</a>
-                <a className={classes["home-link-two"]} href="#">Anniversary Deals</a>
+                <a className={classes["home-link-two"]} href="/">Anniversary Deals</a>
             </div>
             
             <Banner />

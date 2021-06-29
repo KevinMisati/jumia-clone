@@ -4,10 +4,10 @@ import SingleProduct from "./SingleProduct"
 
 const ChosenForU = () => {
 
-    const CalcDiscount = ((newP , oldP) => {
+   /*  const CalcDiscount = ((newP , oldP) => {
         const discount = (newP - oldP) / oldP
         return(Math.round(discount))
-    })
+    }) */
 
     const data = [
         {
@@ -57,9 +57,9 @@ const ChosenForU = () => {
         <div className={classes["all-products"]}>
             <h2>Chosen For You</h2>
             <div className={classes["all-products-container"]}>
-                {data.map((datum) => {
+                {data.map((datum,index) => {
                     return (
-                        <SingleProduct width={100/6 +"%"} product={datum} />
+                        <SingleProduct key={index +Math.random()} width={100/6 +"%"} product={datum} />
                     )
                 })}
             </div>

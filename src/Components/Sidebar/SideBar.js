@@ -12,18 +12,18 @@ const SideBar = () => {
             <div className={classes.categories}>
                 <article>
                     <h2>Category</h2>
-                    <a href="#">Computing</a>
-                    <a href="#">Electronics</a>
-                    <a href="#">Sporting Goods</a>
-                    <a href="#">Phones &amp; Tablets</a>
-                    <a href="#">Toys &amp; Games</a>
-                    <a href="#">Fashion</a>
-                    <a href="#">Gaming</a>
-                    <a href="#">Home &amp; Office</a>
-                    <a  href="#">Grocery</a>
-                    <a href="#">Automobile</a>
-                    <a href="#">Health &amp; Beauty</a>
-                    <a href="#">Baby Products</a>
+                    <a href="/" >Computing</a>
+                    <a href="/">Electronics</a>
+                    <a href="/">Sporting Goods</a>
+                    <a href="/">Phones &amp; Tablets</a>
+                    <a href="/">Toys &amp; Games</a>
+                    <a href="/">Fashion</a>
+                    <a href="/">Gaming</a>
+                    <a href="/">Home &amp; Office</a>
+                    <a  href="/">Grocery</a>
+                    <a href="/">Automobile</a>
+                    <a href="/">Health &amp; Beauty</a>
+                    <a href="/">Baby Products</a>
                 </article>
             </div>
 
@@ -33,30 +33,30 @@ const SideBar = () => {
                     <form action="">
                         <div className={classes.search}>
                             <button>{ <SearchIcon />}</button>
-                        <input placeholder="Search"  type="text" />
+                        <input onChange = {() => {}} placeholder="Search"  type="text" />
                         </div>
                         <div className={classes.control}>
-                        <input id="Adidas" type="checkbox" name="" id="" />
+                        <input id="Adidas" type="checkbox" name=""  />
                             <label htmlFor="">Adidas</label>
                         </div>
                         
                             <div className={classes.control}>
-                        <input id="Advance" type="checkbox" name="" id="" />
+                        <input id="Advance" type="checkbox" name=""  />
                             <label htmlFor="">Advance</label>
                         </div>
                         
                             <div className={classes.control}>
-                        <input id="Always" type="checkbox" name="" id="" />
+                        <input id="Always" type="checkbox" name=""  />
                             <label htmlFor="">Always</label>
                             </div>
 
                         <div className={classes.control}>
-                        <input id="Ampex" type="checkbox" name="" id="" />
+                        <input id="Ampex" type="checkbox" name="" />
                             <label htmlFor="">Ampex</label>
                         </div>
 
                          <div className={classes.control}>
-                        <input id="Annov" type="checkbox" name="" id="" />
+                        <input id="Annov" type="checkbox" name=""  />
                             <label htmlFor="">Annov</label>
                         </div>
                     </form>
@@ -70,11 +70,11 @@ const SideBar = () => {
                         <h2>Price (Kshs)</h2>
                         <button>Apply</button>
                     </div>
-                    <div classNmae={classes["price-range"]}>
+                    <div className={classes["price-range"]}>
                         <div>
                             <div className={classes["left-range"]} style={{ left: "0 %", width: "100%"}}></div>
-                        <input name="x" class="ps" type="range" value="4" min="4" max="500000" />
-                        <input name="y"  type="range" value="500000" min="4" max="500000" />
+                            <input name="x" type="range" onChange={() => { }} value="4" min="4" max="500000" />
+                        <input name="y"  type="range" onChange={() => {}} value="500000" min="4" max="500000" />
                         </div>
                     </div>
                 </article>

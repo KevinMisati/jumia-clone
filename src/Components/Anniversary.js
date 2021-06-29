@@ -92,9 +92,9 @@ const Anniversary = () => {
             </div>
         <div className={classes.anniversary}>
 
-            {data.map(datum => {
+            {data.map((datum,index )=> {
                 return (
-                    <SingleAnnniversary product={datum} />
+                    <SingleAnnniversary key={index +Math.random()} product={datum} />
                 )
             })}
             </div>

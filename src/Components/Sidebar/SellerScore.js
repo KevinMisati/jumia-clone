@@ -12,22 +12,22 @@ const SellerScore = () => {
                         <input placeholder="Search"  type="text" />
                         </div>
                         <div className={classes.control}>
-                        <input id="Adidas" type="checkbox" name="" id="" />
+                        <input id="Adidas" type="checkbox" name=""  />
                             <label htmlFor="">80% or more</label>
                         </div>
                         
                             <div className={classes.control}>
-                        <input style={{borderRadius:"50%"}} id="Advance" type="checkbox" name="" id="" />
+                        <input style={{borderRadius:"50%"}} id="Advance" type="checkbox" name=""  />
                             <label htmlFor="">60% or more</label>
                         </div>
                         
                             <div className={classes.control}>
-                        <input id="Always" type="checkbox" name="" id="" />
+                        <input id="Always" type="checkbox" name=""  />
                             <label htmlFor="">40% or more</label>
                             </div>
 
                         <div className={classes.control}>
-                        <input id="Ampex" type="checkbox" name="" id="" />
+                        <input id="Ampex" type="checkbox" name="" />
                             <label htmlFor="">20% or more</label>
                         </div>
 
