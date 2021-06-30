@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 import classes from "./TopDeals.module.css"
 import SingleProduct from "./SingleProduct"
+import { LeftArrow, RightArrow } from './FoodHeaderIcon'
+
 
 const TopDeals = () => {
     const data = [
@@ -45,13 +47,27 @@ const TopDeals = () => {
             img: "https://ke.jumia.is/cms/2021/JA21/Live/MCP/TNs/V1/Desktop/TV-Accessories.jpg"
         }
     ]
+    const [scroll, setScroll] = useState(0);
+    const handleClickLeft = () => {
+        setScroll((prev) => scroll + 20)
+        console.log(scroll)
+        document.getElementById("scroll").scrollLeft += 133
+    }
+    const handleClickRight = () => {
+        setScroll((prev) => scroll + 20)
+        console.log(scroll)
+        document.getElementById("scroll").scrollLeft -= 133
+    }
+    
     return (
         <div className={classes["all-products"]}>
             <h2>Top Deals</h2>
-            <div className={classes["all-products-container"]}>
+            <div id="scroll" style={{ scrollLeft: scroll +"px"}} className={classes["all-products-container"]}>
+                <button className={classes["scroll-left"]}   onClick={handleClickLeft}><LeftArrow /></button>
+                <button className={classes["scroll-right"]} onClick={handleClickRight}><RightArrow /></button>
             {data.map((datum,index) => {
                 return (
-                    <SingleProduct key={index +Math.random()} width = {"133px"} product={datum} />
+                    <SingleProduct  key={index +Math.random()} width = {"133px"} product={datum} />
                 )
             })}
             </div>
