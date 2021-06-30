@@ -118,3 +118,9 @@ input[type="checkbox"]{
     z-index: 10;
 }
 /* ==end of price section=== */
+
+@media screen and (max-width:780px){
+    .sidebar {
+        display:none;
+    }
+}

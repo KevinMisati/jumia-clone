@@ -59,7 +59,7 @@ const ChosenForU = () => {
             <div className={classes["all-products-container"]}>
                 {data.map((datum,index) => {
                     return (
-                        <SingleProduct key={index +Math.random()} width={100/6 +"%"} product={datum} />
+                        <SingleProduct key={index +Math.random()} width={"133px"} product={datum} />
                     )
                 })}
             </div>

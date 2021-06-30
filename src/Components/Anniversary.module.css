@@ -1,5 +1,4 @@
 .anniversary-container{
-    /* flex-grow: 1; */
     padding: 8px;
     margin-left: 16px;
     background: #fff;
@@ -28,4 +27,14 @@ text-transform: capitalize;
 }
 .title h4{
     cursor: pointer;
+}
+@media screen and (max-width:780px){
+    .anniversary-container{
+        overflow:hidden;
+        flex-wrap:wrap;
+        width:100%;
+        min-width:100%;
+        margin-left:0;
+        background:transparent;
+    }
 }

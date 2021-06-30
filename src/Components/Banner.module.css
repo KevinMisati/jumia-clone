@@ -17,3 +17,15 @@
 .banner img{
     width: auto;
 }
+@media screen and (max-width:780px){
+    .banner{
+        width:calc(100vw - 16px);
+        
+        object-fit:contain;
+        overflow:hidden;
+    }
+    .banner img {
+        width:100%;
+        
+    }
+}
