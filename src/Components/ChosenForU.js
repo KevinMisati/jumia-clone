@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./ChosenForU.module.css"
-import SingleProduct from "./SingleProduct"
+import SingleChosenProduct from "./SingleChosenProduct"
 
 const ChosenForU = () => {
 
@@ -59,7 +59,7 @@ const ChosenForU = () => {
             <div className={classes["all-products-container"]}>
                 {data.map((datum,index) => {
                     return (
-                        <SingleProduct key={index +Math.random()} width={"133px"} product={datum} />
+                        <SingleChosenProduct key={index +Math.random()} width={"133px"} product={datum} />
                     )
                 })}
             </div>

@@ -39,7 +39,12 @@ const Header = () => {
                         <span className={classes["cart-text"]}>Cart</span>
                     </div>
                    
+                   
                 </nav>
+                <div className={classes["search-input"]}>
+                    <button>{<SearchIcon />}</button>
+                    <input placeholder="Search" type="text" />
+                </div>
             </div>
         </div>
     )

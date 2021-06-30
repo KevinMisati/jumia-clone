@@ -9,11 +9,13 @@
 .phone-footer>div {
     display:flex;
     justify-content: space-around;
-    margin: 8px;
+    margin: 16px;
 
 }
-.phone-footer h4{
+.phone-footer h5{
     text-transform:uppercase;
+    font-weight: 200;
+    font-size: .75rem;
 }
 .back-to-top-container{
     background: #323232;
@@ -25,7 +27,7 @@
      width: calc(100% - 16px);
      margin: 0px;
      }
-.back-to-top h4{
+.back-to-top h5{
     text-align: center;
     justify-self: center;
     margin: 0 auto;
