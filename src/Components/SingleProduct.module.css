@@ -4,11 +4,12 @@
     font-size: .875rem;
     cursor: pointer;
     color: #282828;
-    margin: 4px;
+    margin: 2px;
     line-height: 1;
     overflow: hidden;
     border-radius: 4px;
     text-overflow: ellipsis;
+    width: calc(16.666666666% - 4px ) ;
 }
 .product img {
     height: auto;
@@ -19,6 +20,6 @@
 @media screen and (max-width:780px){
     .product{
         width:calc(45% - 8px);
-        width:300px;
+        width:133px;
     }
 }

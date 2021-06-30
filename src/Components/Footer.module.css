@@ -119,14 +119,13 @@
 /* second part */
 @media screen and (max-width:780px){
     .footer{
-        width:100vw;
-        overflow:hidden;
-        max-width:100vw;
-        margin:0;
+       
+    display: none;
     }
     .first-part{
         width:100%;
         flex-direction:column;
+        display: none;
        
     }
 }

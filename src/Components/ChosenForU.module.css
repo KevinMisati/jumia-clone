@@ -1,11 +1,11 @@
 .all-products{
-    width: 100vw;
     overflow: hidden;
     display:flex;
     margin: 16px 0;
    flex-direction: column;
    background: #fff;
-   min-width:100vw;
+   width:100%;
+   max-width:1148px;
 }
 .all-products h2{
     font-size: 1.2rem;
@@ -17,7 +17,6 @@
     justify-content: center;
 }
 .all-products-container{
-    width: 100vw;
     display:flex;
     scroll-behavior: smooth;
     scroll-snap-type:x mandatory;

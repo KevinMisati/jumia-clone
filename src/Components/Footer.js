@@ -1,10 +1,17 @@
 import React from 'react'
 import classes from "./Footer.module.css"
-import {GoogleStoreIcon, AppStoreIcon,FooterCartIcon,FooterLogo} from "./FoodHeaderIcon"
+import { GoogleStoreIcon, AppStoreIcon, FooterCartIcon, FooterLogo } from "./FoodHeaderIcon"
+import PhoneFooter from "../Components/PhoneFooter"
+
 
 const Footer = () => {
     return (
+        <>
+        <div className={classes["phone-footer"]}>
+            <PhoneFooter />
+        </div>
         <div className={classes.footer}>
+            
 
             <div className={classes["first-part-container"]}>
             <article className={classes["first-part"]}>
@@ -40,7 +47,8 @@ const Footer = () => {
                 </div>
             <article className={classes["second-part"]}></article>
             
-        </div>
+            </div>
+            </>
     )
 }
 
