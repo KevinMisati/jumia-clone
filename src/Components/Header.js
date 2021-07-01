@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from "./Header.module.css"
-import FoodHeaderIcon,{PayIcon,Bars,Logo,AccountIcon,HelpIcon,CartIcon,SearchIcon,DownArrow} from "./FoodHeaderIcon"
+import FoodHeaderIcon, { PayIcon, Bars, Logo, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from "./FoodHeaderIcon"
+import {Link} from "react-router-dom"
 
 const Header = () => {
     return (
@@ -16,7 +17,7 @@ const Header = () => {
                 <nav className={classes.nav}>
                    
                     <Bars />
-                    <Logo />
+                    <Link to="/"><Logo /></Link> 
                     <form action="">
                         <div>
                             <button className={classes["search-btn-icon"]}><SearchIcon /></button>
@@ -34,9 +35,11 @@ const Header = () => {
                         <span className={classes["help-text"]}>Help</span>
                         <span className={classes["help-arrow"]}><DownArrow /></span>
                     </div>
-                    <div >
-                        <span><CartIcon /></span>
+                    <div className={classes["cart-icon"]} >
+                        <Link  to="/cart">
+                        <span className={classes["icon"]}><CartIcon /></span>
                         <span className={classes["cart-text"]}>Cart</span>
+                        </Link>
                     </div>
                    
                    

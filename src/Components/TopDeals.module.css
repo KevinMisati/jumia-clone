@@ -24,7 +24,7 @@
     display:flex;
     scroll-behavior: smooth;
     scroll-snap-type:x mandatory;
-    overflow-x: hidden;
+    overflow: auto;
     text-align: center;
     
 }
@@ -53,6 +53,14 @@
     outline: none;
     border: none;
 }
+@media screen and (min-width:780px){
+    .all-products-container{
+        overflow-x: hidden;
+    }
+}
+
 @media screen and (max-width:780px){
-    overflow:;
+    .scroll-right,.scroll-left{
+        display: none;
+    }
 }

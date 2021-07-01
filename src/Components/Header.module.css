@@ -71,6 +71,8 @@ align-items: center;
     border-radius: 4px;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav input{
     font-size: 1rem;
@@ -107,7 +109,24 @@ align-items: center;
     font-weight: 500;
     
 }
+/* cart */
+.cart-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.cart-icon a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    display: block;
+    
+}
+.cart-icon .icon {
+    vertical-align: middle;
+}
+/* end cart */
  
 
 @media screen and (min-width:780px){

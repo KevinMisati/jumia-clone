@@ -108,6 +108,7 @@
 .app-google-icons{
     margin-top: 16px;
     display: flex;
+    cursor: pointer;
 }
 .app-google-icons div{
     border: 1px solid #fff;
