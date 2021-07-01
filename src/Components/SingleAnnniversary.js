@@ -1,7 +1,14 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import classes from "./SingleAnniversary.module.css"
+import { Context } from '../store/StoreProvider'
 
 const SingleAnnniversary = ({ product }) => {
+    const ctx = useContext(Context)
+
+    /* const addToCartHandler = (product) => {
+        dispatch({type:"ADD_TO_CART",payload:product})
+    } */
+
     let {oldPrice,newPrice,image,name,stars,numberReviews} = product
 
 if (name.length > 40) {
@@ -34,7 +41,9 @@ if (name.length > 40) {
                         </div>
                         
                 </div>
-                <button>add to cart</button>
+                    <button onClick={() => {
+                        ctx.addToCartHandler(product)
+                }}>add to cart</button>
                 </div>
                 </div>
             
