@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from "./PhoneFooter.module.css"
+import {Link} from "react-router-dom"
 
 const PhoneFooter = () => {
     return (
@@ -9,9 +10,9 @@ const PhoneFooter = () => {
             <div className={classes["phone-footer"]}> 
             <div style={{ margin: "0px" }} className={classes["back-to-top-container"]}>
             <div  className={classes["back-to-top"]}>
-                <h5><a href="/" >
+                <h5><Link to="/" >
                     back to top
-                </a></h5>
+                </Link></h5>
                     </div>
             </div>
                 
