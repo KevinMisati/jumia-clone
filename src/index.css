@@ -8,6 +8,7 @@ body{
   align-items: center;
   font-size: .875rem;
   width: 100%;
+  position: relative;
 }
 *,*::after,*::before{
   margin: 0;

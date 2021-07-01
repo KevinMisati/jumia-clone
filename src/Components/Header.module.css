@@ -1,10 +1,19 @@
+.header{
+ overflow: visible;
+   
+}
 .ad {
     width: 100%;
-    
+
     cursor: pointer;
     max-width: 1184px;
     margin: 0 auto;
     object-fit: contain;
+     position: -webkit-sticky; 
+position: sticky;
+flex-direction: column;
+z-index: 1010;
+top: 0;
 }
 .ad img {
     max-width: 100%;
@@ -20,22 +29,33 @@
     display: none;
 }
 .nav-container{
- height: 72px;
-position:sticky;
+    overflow: visible;
+ /* height: 72px; */
 background: #fff;
 display: flex;
 align-items: center;
 justify-content:center;
 width: 100vw;
+position: -webkit-sticky; 
+position: sticky;
 flex-direction: column;
+z-index: 100;
+top: 0px;
+box-shadow: 0 4px 4px -4px rgba(0,0,0,0.12);
+padding: 16px;
+}
+
+.nav-container-stick{
+    position: absolute;
 }
 .nav {
    width: 100%;
    max-width: 1148px;
    margin: 0 0;
-    display: flex;
+display: flex;
 align-items: center;
-   }
+ 
+}
    
 .nav>* {
     margin: 0 1rem;
