@@ -55,7 +55,7 @@ const ChosenForU = () => {
     ]
     return (
         <div className={classes["all-products"]}>
-            <h2>Chosen For You</h2>
+            <h2>Top picks for you</h2>
             <div className={classes["all-products-container"]}>
                 {data.map((datum,index) => {
                     return (

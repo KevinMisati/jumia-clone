@@ -10,6 +10,7 @@
     border-radius: 4px;
     text-overflow: ellipsis;
     width: calc(16.666666666% - 4px ) ;
+  
 }
 .product img {
     height: auto;
@@ -21,7 +22,14 @@
     width: 100%;
     object-fit: contain;
 }
-
+.product:hover {
+     box-shadow: 2px 5px 10px rgba(0,0,0,.2);
+    transform: scale(1.03);
+}
+.product:hover img{
+    
+   
+}
 .name {
     font-size: .75rem;
     line-height: 1.4;

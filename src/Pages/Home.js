@@ -16,8 +16,9 @@ const Home = () => {
             </div>
             
             <Banner />
-            <TopDeals />
+            
             <ChosenForU />
+            <TopDeals />
             <div className={classes["sidebar-anniversary"]}>
                 <SideBar />
                 <Anniversary />
