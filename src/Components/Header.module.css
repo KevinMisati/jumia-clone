@@ -215,17 +215,10 @@ align-items: center;
     .nav>form{
         display: none;
     }
-    .help-text{
-        display: none;
-    }
-    .help-arrow{
-        display: none;
-    }
-    .help .svg-icon{
-        display: none;
-    }
-    
-    .cart-text{
+    .text,
+    .help-arrow,
+    .help .svg-icon
+    {
         display: none;
     }
 .nav-container{
