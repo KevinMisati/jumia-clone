@@ -225,8 +225,8 @@ align-items: center;
     }
 .nav-container{
     height: auto;
-    
     padding: 8px;
+    align-items: stretch;
 }
     .search-input{
     display: block;
