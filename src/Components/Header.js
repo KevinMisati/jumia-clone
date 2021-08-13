@@ -15,13 +15,15 @@ const Header = () => {
     return (
         <>
             
-        <div className={classes.header}>
-            <div className={classes.ad}>
-                <img src="https://ke.jumia.is/cms/2021/W31/CP/KE_Cross_SelfLove_STB_0721.gif" alt=""/>
-            </div>
-            <div className={classes.icons}>
-                <FoodHeaderIcon />
-                <PayIcon />
+            <div className={classes.header}>
+                {/* advert */}
+                <div className={classes.ad}>
+                    <img src="https://ke.jumia.is/cms/2021/W31/CP/KE_Cross_SelfLove_STB_0721.gif" alt=""/>
+                </div>
+                    {/* 2 icons only on large screens */}
+                <div className={classes.icons}>
+                    <FoodHeaderIcon />
+                    <PayIcon />
                 </div>
                 </div>
                 
@@ -33,6 +35,8 @@ const Header = () => {
 
                     <Bars />
                     <Link to="/"><Logo /></Link>
+                    
+                    {/* only on large screens */}
                     <form action="">
                         <div>
                             <button className={classes["search-btn-icon"]}><SearchIcon /></button>
@@ -70,9 +74,10 @@ const Header = () => {
 
 
                 </nav>
+                {/* search bar:only appears on small screens */}
                 <div className={classes["search-input"]}>
                     <button>{<SearchIcon />}</button>
-                    <input placeholder="Search" type="text" />
+                    <input placeholder="Search products, brands and categories" type="text" />
                 </div>
             </div>
              
