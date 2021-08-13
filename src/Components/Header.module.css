@@ -29,8 +29,7 @@ top: 0;
     display: none;
 }
 .nav-container{
-    overflow: visible;
- /* height: 72px; */
+overflow: visible;
 background: #fff;
 display: flex;
 align-items: center;
@@ -221,8 +220,12 @@ align-items: center;
     {
         display: none;
     }
+    .nav {
+        width: auto;
+    }
 .nav-container{
     height: auto;
+    
     padding: 8px;
 }
     .search-input{
