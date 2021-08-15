@@ -35,7 +35,7 @@ const Header = () => {
                 <nav className={classes.nav}>
 
                     <Bars />
-                    <Link to="/"><Logo /></Link>
+                    <Link to="/"><Logo width="139px" /></Link>
 
                     {/* only on large screens */}
                     <form action="">

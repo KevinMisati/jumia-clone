@@ -11,16 +11,20 @@ flex-direction: column;
 z-index: 100;
 top: 0px;
 box-shadow: 0 4px 4px -4px rgba(0,0,0,0.12);
-padding: 16px;
+padding: 0px;
+padding-top: 8px;
+height:auto;
 }
 .nav{
     width: 100%;
-    padding: 0 16px;
+    padding: 0 8px;
 }
 .first-row{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 8px;
+
 }
 .icons{
     display: flex;
@@ -30,10 +34,16 @@ padding: 16px;
 }
 .logo {
     margin-left: 16px;
+
+}
+.logo-bars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo-bars>*{
     margin-right: 16px;
-
+    
 }
 .text{
     display: none;
