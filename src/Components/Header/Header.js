@@ -1,10 +1,11 @@
 import React,{useContext} from 'react'
 import classes from "./Header.module.css"
-import FoodHeaderIcon, { PayIcon, Bars, Logo, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from "./FoodHeaderIcon"
+import FoodHeaderIcon, { PayIcon, Bars, Logo, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from "../FoodHeaderIcon"
 import { Link } from "react-router-dom"
-import {Context} from "../store/StoreProvider"
-import LoginButton from './Account/LoginButton'
-import Button from './UI/Button'
+import {Context} from "../../store/StoreProvider"
+
+import Button from '../UI/Button'
+import MobileHeader from './MobileHeader' 
 
 const Header = () => {
     const ctx = useContext(Context)
@@ -35,7 +36,7 @@ const Header = () => {
 
                     <Bars />
                     <Link to="/"><Logo /></Link>
-                    
+
                     {/* only on large screens */}
                     <form action="">
                         <div>
@@ -49,14 +50,14 @@ const Header = () => {
                         <button>
                         <span><AccountIcon /></span>
                         <span className={classes["text"]}>Login</span>
-                            <span className={classes["help-text"]}><DownArrow /></span>
+                            <span ><DownArrow /></span>
                         </button>
                        {/*  <LoginButton /> */}
                     </div>
 
                     <div className={classes["help-text"]}>
                         <button>
-                        <span className={classes["text"]}><HelpIcon /></span>
+                            <span className={classes["help-icon"]}><HelpIcon /></span>
                         <span className={classes["text"]}>Help</span>
                             <span className={classes["help-arrow"]}><DownArrow /></span>
                         </button>
@@ -75,10 +76,14 @@ const Header = () => {
 
                 </nav>
                 {/* search bar:only appears on small screens */}
-                <div className={classes["search-input"]}>
+               {/*  <div className={classes["search-input"]}>
                     <button>{<SearchIcon />}</button>
                     <input placeholder="Search products, brands and categories" type="text" />
-                </div>
+                </div> */}
+            </div>
+
+            <div className={classes["mobile-header"]}>
+                 <MobileHeader />
             </div>
              
             </>

@@ -1,10 +1,9 @@
 import './App.css';
 import Home from "./Pages/Home"
-import Header from "./Components/Header"
+import Header from "./Components/Header/Header"
 import Footer from "./Components/Footer"
-import { Link, Switch, Route } from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 import Cart from "./Pages/Cart"
-import { BrowserRouter as Router } from "react-router-dom"
 import StoreProvider from "./store/StoreProvider"
 function App() {
   return (
