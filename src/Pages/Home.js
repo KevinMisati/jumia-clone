@@ -9,16 +9,17 @@ import Anniversary from '../Components/Anniversary'
 import DynamicBanner from "../Components/DynamicBanner/DynamicBanner"
 const Home = () => {
     return (
+        <section className={classes["main-container"]}>
         <main>
             <div className={classes.dynamic}>
                 <DynamicBanner />
             </div>
             
             
-            <div className={classes["home-link"]}>
+           {/*  <div className={classes["home-link"]}>
                 <a className={classes["home-link-one"]} href="/">Home</a>
                 <a className={classes["home-link-two"]} href="/">Anniversary Deals</a>
-            </div>
+            </div> */}
             <ChosenForU />
             <DoubleBanner />
             <TopDeals />
@@ -32,7 +33,8 @@ const Home = () => {
             </div>
             
             
-        </main>
+            </main>
+        </section>
     )
 }
 

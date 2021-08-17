@@ -1,3 +1,5 @@
+
+
 main{
     margin-top: 8px;
     display: flex;
@@ -6,6 +8,7 @@ main{
     flex-direction: column;
     max-width: 1148px;
     align-items: center;
+   
 }
 .home-link{
     font-size: .75rem;
@@ -43,4 +46,11 @@ cursor: pointer;
         max-width:100vw;
         min-width:100vw;
     }
+}
+@media (min-width: 1200px){
+.main-container {
+    background: center 0 no-repeat url("https://ke.jumia.is/cms/2021/W33/HP/Sliders/Takeover.jpg");
+    width: 100vw;
+        background-color: #FE9900;
+}
 }
