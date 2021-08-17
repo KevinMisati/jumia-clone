@@ -19,7 +19,7 @@ const Header = () => {
             <div className={classes.header}>
                 {/* advert */}
                 <div className={classes.ad}>
-                    <img src="https://ke.jumia.is/cms/2021/W31/CP/KE_Cross_SelfLove_STB_0721.gif" alt=""/>
+                    <img src="https://ke.jumia.is/cms/2021/W32/HP/KE_Cross_CPR_300bob_0821_STB-(1).gif" alt=""/>
                 </div>
                     {/* 2 icons only on large screens */}
                 <div className={classes.icons}>

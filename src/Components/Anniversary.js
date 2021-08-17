@@ -139,7 +139,7 @@ const Anniversary = () => {
             officialStore: false,
             numberReviews: 3,
         },
-        {
+         {
             image: "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/01/355952/1.jpg?8827",
             name: ">Generic Techno Spark K7 autofocus Back Cover - Black",
             oldPrice:400,
@@ -147,7 +147,7 @@ const Anniversary = () => {
             stars:5 ,
             officialStore: false,
             numberReviews: 4,
-        }
+        } 
         
     
     

@@ -42,10 +42,14 @@ const Footer = () => {
                         <div><AppStoreIcon /></div>
                         <div><GoogleStoreIcon /></div>
                     </div>
-                    </div>
+                        </div>
+                        
                 </article>
                 </div>
-            <article className={classes["second-part"]}></article>
+                <p>Built by Kevin Misati for educational purposes only.</p>
+                <article className={classes["second-part"]}>
+                    
+            </article>
             
             </div>
             </>
