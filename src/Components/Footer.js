@@ -46,7 +46,7 @@ const Footer = () => {
                         
                 </article>
                 </div>
-                <p>Built by Kevin Misati for educational purposes only.</p>
+                <p>Built by Kevin Misati.</p>
                 <article className={classes["second-part"]}>
                     
             </article>
