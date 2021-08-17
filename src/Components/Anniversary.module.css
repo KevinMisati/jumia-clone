@@ -5,10 +5,10 @@
     border-radius:4px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
     font-size: .875rem;
-    flex-basis: 75%;
-    max-width: 75%;
-    min-width: 75%;
-    width: 75%;
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
 }
 .anniversary{
     display: flex;

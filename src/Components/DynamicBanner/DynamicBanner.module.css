@@ -1,0 +1,36 @@
+.dynamic-ads-container{
+    width: 100vw;
+    max-width: 1184px;
+    height: auto;
+}
+.dynamic-container{
+    color: #282828;
+font-size: .875rem;
+display: flex;
+flex: auto 1 auto;
+flex-wrap: no-wrap;
+width: 100vw;
+max-width: 1184px;
+margin-right: auto;
+margin-left: auto;
+padding: 16px 0px;
+position: relative;
+height: 384px;
+overflow: hidden; 
+margin-bottom: 24px;
+}
+
+@media screen and (max-width:780px){
+    .dynamic-container{
+        height: auto;
+        padding: 0;
+        margin-bottom: 0px;
+    }
+    .left-sidebar{
+        display: none;
+}
+.right-sidebar{
+    display: none;
+}
+}
+

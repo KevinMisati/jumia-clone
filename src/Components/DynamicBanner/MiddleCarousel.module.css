@@ -1,0 +1,160 @@
+.container {
+  padding: 40px;
+  background: #419be0;
+  display:block;
+  position: relative;
+  width: 712px;
+  
+}
+.slider-container{
+    cursor: pointer;
+    color: #282828;
+
+position: relative;
+user-select: none;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+width: 712px;
+height: 384px;
+border-radius: 4px;
+/* overflow: hidden; */
+flex-shrink: 0;
+margin-right: 16px;
+margin-left: 16px; 
+
+}
+.slider-container .slick-prev, .slider-container .slick-next{
+    color: green;
+    z-index: 1000000;
+}
+.slick-prev{
+
+box-sizing: border-box;
+text-align: center;
+font-size: 0;
+line-height: 0;
+position: absolute;
+top: 50%;
+width: 20px;
+height: 20px;
+padding: 0;
+transform: translate(0, 0%) !important;
+cursor: pointer;
+color: transparent;
+border: none;
+outline: none;
+background: transparent;
+left: -25px;
+display: block;
+}
+.slider-container .slick-prev::before{
+    z-index: "10000";
+    background: "#000" !important;
+    display: "block";
+    color: "#fff" !important;
+    padding:"8px";
+    border-radius: "100%";
+    border:1px solid #000;
+    outline:none
+}
+.slider-container .slick-prev:before{
+    color: green;
+    background: #fff;
+    left: 0px;
+}
+
+
+.slick-slide img {
+  margin: auto;
+}
+.img-container{
+   
+}
+.btn:before {
+    content:""
+}
+.slick-dots{
+    bottom:25px;
+}
+.slick-dots li.slick-active {
+    background-color: orange !important;
+}
+
+.btns-container{
+    position: absolute;
+}
+.prev-btn-container,
+.next-btn-container{
+    position: absolute;
+    height: 384px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    z-index: 200;
+    cursor: pointer;
+}
+.prev-btn-container{
+    left: 232px;
+}
+.next-btn-container{
+    right: 260px;
+}
+.prev-btn,
+.next-btn{
+    position: absolute;
+    color: green;
+    background: yellowgreen;
+     z-index: 300;
+     width: 20px;
+     height: 20px;
+     border-radius: 100%;
+     padding: 18px;
+     background: #000;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     opacity: .75;
+     display:none;
+    
+}
+.next-btn-container:hover .next-btn,
+.prev-btn-container:hover .prev-btn{
+    display: flex;
+}
+.prev-btn{
+    left: 16px;
+}
+.next-btn{
+    right: 16px;
+}
+@media screen and (max-width:768px){
+    .container{
+        width: 100vw;
+        height: auto;
+    }
+    .slider-container{
+        width:100vw;
+        height: auto;
+        margin: 0;
+    }
+    .img-container{
+        width: 100vw;
+        height: auto;
+    }
+    .next-btn-container,
+    .prev-btn-container{
+    display: none;
+}
+    .prev-btn,
+    .next-btn{
+    display: none;
+}
+    .img-container img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-fit: cover;
+        
+    }
+}

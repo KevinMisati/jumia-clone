@@ -6,8 +6,15 @@ const SingleProduct = ({ product, width }) => {
     if (name.length > 23) {
         name = name.substring(0,22) +"..."
     }
+    const discount = Math.round(((product.newPrice - product.oldPrice) / oldPrice) * 100)
     return (
-        <div className={classes.product}>
+        <>
+            <div className={classes.product}>
+                <div className={classes["discount-container"]}>
+                    <span className={classes.discount}>
+                        {discount}
+                    </span>
+                </div>
             <img src={img} alt="" />
             <p>{name}</p>
             <div className={classes.price}>KSh {newPrice}</div>
@@ -15,7 +22,10 @@ const SingleProduct = ({ product, width }) => {
                 <span className={classes["old-price"]} >KSh {oldPrice}</span>
                 
             </div>
-        </div>
+           
+            </div>
+           
+            </>
     )
 }
 

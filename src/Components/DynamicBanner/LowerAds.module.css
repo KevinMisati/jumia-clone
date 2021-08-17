@@ -1,0 +1,77 @@
+.lower-ads{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single-ad{
+   
+padding-right: 8px;
+padding-left: 8px;
+flex-basis:  calc(25% - 8px);
+max-width: calc(25% - 8px);
+min-width: calc(25% - 8px);
+width: 25%;
+display: flex;
+align-items: center;
+border-radius: 4px;
+background-color: #fff;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+padding: 8px;
+margin-right: 16px;
+cursor: pointer;
+}
+.lower-ads:last-child{
+   margin-right: 16px; 
+}
+.single-ad img {
+    width: 40px;
+    height: 40px;
+}
+.caption{
+    
+width: 100%;
+padding-left: 16px;
+font-weight: 500;
+font-size: 1rem;
+text-transform: capitalize;
+}
+
+@media screen and (max-width:780px){
+    .lower-ads-container{
+ 
+ 
+padding: 0 8px;
+    }
+    .lower-ads{
+        background-color: #fff;
+        margin: 0 4px;
+        border-radius: 4px;
+       
+    }
+    .single-ad{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        box-shadow: none;
+        font-weight: 300;
+        background-color: transparent;
+        flex-basis: 25%;
+        flex-basis: 25%;
+        max-width: 25%;
+        min-width: 25%;
+      margin: 0;
+    }
+    .caption{
+        font-size: .75rem;
+        margin-top: 4px;
+    }
+    .lower-ads:last-child{
+   
+   margin: 0;
+}
+    .single-ad img{
+        width: 30px;
+        height: 30px;
+    }
+}

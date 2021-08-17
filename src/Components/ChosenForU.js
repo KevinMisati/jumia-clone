@@ -59,7 +59,7 @@ const ChosenForU = () => {
             <div className={classes["all-products-container"]}>
                 {data.map((datum,index) => {
                     return (
-                        <SingleChosenProduct key={index +Math.random()} width={"133px"} product={datum} />
+                        <SingleChosenProduct  key={index +Math.random()} width={"133px"} product={datum} />
                     )
                 })}
             </div>

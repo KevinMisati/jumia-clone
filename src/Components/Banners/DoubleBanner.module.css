@@ -1,0 +1,51 @@
+.double-banner-container{
+   
+
+flex-basis: 100%;
+max-width: 100%;
+min-width: 100%;
+width: 100%;
+cursor: pointer;
+
+}
+.double-banner{
+     display: flex;
+border-radius: 4px;
+background-color: #fff;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+overflow: hidden;
+padding: 8px;
+      }
+.first-part img,
+.second-part img{
+    width: calc(100% - 6px);
+
+
+}
+.first-part,
+.second-part{
+overflow: hidden;
+border-radius: 4px;
+}
+
+.first-part{
+    margin-right:4px;
+    
+}
+.second-part{
+    margin-left: 4px;
+}
+.first-part:hover img,
+.second-part:hover img{
+    transform: scale(1.05);
+    
+}
+@media screen and (max-width:780px){
+    .first-part{
+    margin-right:2px;
+    
+}
+.second-part{
+    margin-left: 2px;
+}
+}
