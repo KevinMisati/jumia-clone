@@ -21,10 +21,16 @@ margin-bottom: 24px;
 }
 
 @media screen and (max-width:780px){
+    .dynamic-ads-container{
+        padding: 0px;
+    }
     .dynamic-container{
         height: auto;
         padding: 0;
         margin-bottom: 0px;
+        width:calc(100vw - 16px);
+        margin: 0 auto;
+        
     }
     .left-sidebar{
         display: none;
