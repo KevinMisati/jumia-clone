@@ -51,9 +51,20 @@ const MobileHeader = () => {
                     <div className={classes["cart-icon"]} >
                         <button onClick={LoginHandler}>
                             <Link to="/cart">
-                                <span className={classes["icon"]}>
-                                            <i class="fas fa-shopping-cart"></i>{/* <CartIcon /> */}</span>
-                                {!(cartItemsNumber === 0) && <span className={classes["cart-number"]}>{cartItemsNumber}</span>}
+                                <div className={classes["icon"]}>
+                                        <span>
+                                                <i class="fas fa-shopping-cart"></i>
+                                        </span>
+                                            
+                                </div>
+                                <div>
+                                            {!(cartItemsNumber === 0) &&   <div className={classes["cart-number"]}>
+                                                 <span >{cartItemsNumber}</span>
+                                        </div>}
+
+                                        
+                                </div>
+                                
                             </Link>
                         </button>
                     </div>

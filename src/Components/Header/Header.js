@@ -82,7 +82,15 @@ const Header = () => {
                                     <i class="fas fa-shopping-cart"></i>
                             </span>
                             <span className={classes["text"]}>Cart</span>
-                            {!(cartItemsNumber === 0) && <span className={classes["cart-number"]}>{cartItemsNumber}</span>}
+                                <div>
+                                    {!(cartItemsNumber === 0) && <div className={classes["cart-number"]}>
+                                        <span >{cartItemsNumber}</span>
+                                    </div>}
+
+
+                                </div>
+
+                            
                             </Link>
                         </button>
                     </div>

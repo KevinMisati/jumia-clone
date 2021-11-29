@@ -94,6 +94,9 @@ height:auto;
 }
 .cart-number {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: -6%;
     left:42%;
     font-size: 0.625rem;
