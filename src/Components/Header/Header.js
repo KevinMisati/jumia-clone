@@ -1,8 +1,9 @@
 import React,{useContext} from 'react'
 import classes from "./Header.module.css"
-import FoodHeaderIcon, { PayIcon, Bars, Logo, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from "../FoodHeaderIcon"
+import FoodHeaderIcon, { PayIcon, Bars, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from "../FoodHeaderIcon"
 import { Link } from "react-router-dom"
 import {Context} from "../../store/StoreProvider"
+import Logo from "../../images/logo.svg"
 
 import Button from '../UI/Button'
 import MobileHeader from './MobileHeader' 
@@ -34,13 +35,19 @@ const Header = () => {
 
                 <nav className={classes.nav}>
 
-                    <Bars />
-                    <Link to="/"><Logo width="139px" /></Link>
-
+                    <span>
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <Link to="/">
+                        <img alt="logo" src={Logo}></img>
+                    </Link>
+                    
                     {/* only on large screens */}
                     <form action="">
                         <div>
-                            <button className={classes["search-btn-icon"]}><SearchIcon /></button>
+                            <button className={classes["search-btn-icon"]}>
+                                <i class="fas fa-search"></i>
+                            </button>
                             <input placeholder="Search products, brands and categories" type="text" />
                         </div>
                         <Button name="search" />
@@ -48,7 +55,10 @@ const Header = () => {
                     </form>
                     <div className={classes.login}>
                         <button>
-                        <span><AccountIcon /></span>
+                            <span>
+                                <i class="far fa-user"></i>
+                                {/* <AccountIcon /> */}
+                            </span>
                         <span className={classes["text"]}>Login</span>
                             <span ><DownArrow /></span>
                         </button>
@@ -57,7 +67,9 @@ const Header = () => {
 
                     <div className={classes["help-text"]}>
                         <button>
-                            <span className={classes["help-icon"]}><HelpIcon /></span>
+                            <span className={classes["help-icon"]}>
+                                <i class="far fa-question-circle"></i>
+                            </span>
                         <span className={classes["text"]}>Help</span>
                             <span className={classes["help-arrow"]}><DownArrow /></span>
                         </button>
@@ -66,7 +78,9 @@ const Header = () => {
                     <div className={classes["cart-icon"]} >
                         <button onClick={LoginHandler}>
                         <Link to="/cart">
-                            <span className={classes["icon"]}><CartIcon /></span>
+                            <span className={classes["icon"]}>
+                                    <i class="fas fa-shopping-cart"></i>
+                            </span>
                             <span className={classes["text"]}>Cart</span>
                             {!(cartItemsNumber === 0) && <span className={classes["cart-number"]}>{cartItemsNumber}</span>}
                             </Link>

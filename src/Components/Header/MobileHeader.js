@@ -1,8 +1,9 @@
 import React,{useContext} from 'react'
-import {  Bars, Logo, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from "../FoodHeaderIcon"
+import {  Bars, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from "../FoodHeaderIcon"
 import classes from "./MobileHeader.module.css"
 import { Link } from "react-router-dom"
 import { Context } from "../../store/StoreProvider"
+import Logo from   "../../images/logo.svg"
 
 
 
@@ -27,9 +28,10 @@ const MobileHeader = () => {
                            </span>
                             
                             <Link to="/">
-                                dfk
-                                <img className={classes.logo} src="https://iconape.com/wp-content/files/xf/301413/svg/jumia-seeklogo.com.svg" alt="logo" />
+                                <img alt="logo" src={Logo}></img>
                             </Link>
+                            
+                            
                            
                         </div>
 

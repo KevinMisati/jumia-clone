@@ -117,7 +117,9 @@
     outline: none;
     vertical-align: middle;
 }
-
+.nav img{
+    width: 139px;
+}
 .nav button.search-btn-icon{
     margin: auto 8px;
     font-size: .875rem;
@@ -143,6 +145,7 @@
 }
 .cart-icon .icon {
     vertical-align: middle;
+    margin-right: 8px;
 }
 .cart-number {
     position: absolute;
