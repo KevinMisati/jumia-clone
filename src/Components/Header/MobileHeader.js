@@ -22,6 +22,7 @@ const MobileHeader = () => {
                         <div className={classes["logo-bars"]}>
                             
                             <Bars  />
+                            <h1>HI</h1>
                             <Link to="/"><Logo width="100px" /></Link>
                            
                         </div>
