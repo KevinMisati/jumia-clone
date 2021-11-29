@@ -3,7 +3,7 @@ import {  Bars, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from ".
 import classes from "./MobileHeader.module.css"
 import { Link } from "react-router-dom"
 import { Context } from "../../store/StoreProvider"
-import Logo from   "../../images/logo.svg"
+import Logo from   "../../images/jumia-logo.svg"
 
 
 

@@ -3,7 +3,7 @@ import classes from "./Header.module.css"
 import FoodHeaderIcon, { PayIcon, Bars, AccountIcon, HelpIcon, CartIcon, SearchIcon, DownArrow } from "../FoodHeaderIcon"
 import { Link } from "react-router-dom"
 import {Context} from "../../store/StoreProvider"
-import Logo from "../../images/logo.svg"
+import Logo from "../../images/jumia-logo.svg"
 
 import Button from '../UI/Button'
 import MobileHeader from './MobileHeader' 
