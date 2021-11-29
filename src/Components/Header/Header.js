@@ -75,11 +75,6 @@ const Header = () => {
 
 
                 </nav>
-                {/* search bar:only appears on small screens */}
-               {/*  <div className={classes["search-input"]}>
-                    <button>{<SearchIcon />}</button>
-                    <input placeholder="Search products, brands and categories" type="text" />
-                </div> */}
             </div>
 
             <div className={classes["mobile-header"]}>

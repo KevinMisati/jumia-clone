@@ -38,7 +38,7 @@ const PhoneFooter = () => {
                 <h5>report a product</h5>   
             </div>
             <div className={classes["all-rights"]}>
-                <p>All Rights Reseved</p>
+                    <p>Built by Kevin Misati.</p>
                 </div>
           <div></div>                                                            
         </div> 
