@@ -21,8 +21,11 @@ const MobileHeader = () => {
                     <div className={classes["first-row"]}>
                         <div className={classes["logo-bars"]}>
                             
-                            <Bars  />
-                            <h1>HI</h1>
+                           {/*  <Bars  /> */}
+                           <span>
+                                <i class="fas fa-bars"></i>
+                           </span>
+                            
                             <Link to="/"><Logo width="100px" /></Link>
                            
                         </div>
@@ -32,7 +35,10 @@ const MobileHeader = () => {
                        
                     <div className={classes.login}>
                         <button>
-                            <span><AccountIcon /></span>
+                            <span>
+                                <i class="far fa-user"></i>
+                                {/* <AccountIcon /> */}
+                            </span>
                         </button>
                         {/*  <LoginButton /> */}
                     </div>
@@ -40,7 +46,8 @@ const MobileHeader = () => {
                     <div className={classes["cart-icon"]} >
                         <button onClick={LoginHandler}>
                             <Link to="/cart">
-                                <span className={classes["icon"]}><CartIcon /></span>
+                                <span className={classes["icon"]}>
+                                            <i class="fas fa-shopping-cart"></i>{/* <CartIcon /> */}</span>
                                 {!(cartItemsNumber === 0) && <span className={classes["cart-number"]}>{cartItemsNumber}</span>}
                             </Link>
                         </button>
@@ -49,7 +56,10 @@ const MobileHeader = () => {
                     </div>
                 {/* second row */}
                 <div className={classes["search-input"]}>
-                    <button>{<SearchIcon />}</button>
+                    <button>
+                        <i class="fas fa-search"></i>
+                        {/* {<SearchIcon />} */}
+                    </button>
                     <input placeholder="Search products, brands and categories" type="text" />
                 </div>
                 </nav>
