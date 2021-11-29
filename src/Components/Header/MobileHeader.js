@@ -26,7 +26,10 @@ const MobileHeader = () => {
                                 <i class="fas fa-bars"></i>
                            </span>
                             
-                            <Link to="/"><Logo width="100px" /></Link>
+                            <Link to="/">
+                                {/* <Logo width="100px" /> */}
+                                <img className={classes.logo} src="https://iconape.com/wp-content/files/xf/301413/svg/jumia-seeklogo.com.svg" alt="logo" />
+                            </Link>
                            
                         </div>
 
