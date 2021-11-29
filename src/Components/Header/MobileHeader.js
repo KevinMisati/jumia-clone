@@ -27,7 +27,7 @@ const MobileHeader = () => {
                            </span>
                             
                             <Link to="/">
-                                {/* <Logo width="100px" /> */}
+                                dfk
                                 <img className={classes.logo} src="https://iconape.com/wp-content/files/xf/301413/svg/jumia-seeklogo.com.svg" alt="logo" />
                             </Link>
                            
